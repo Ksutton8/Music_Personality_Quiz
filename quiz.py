@@ -58,7 +58,7 @@ else:
 
 
 #question 3
-print('3. What moods do you often associate with music?')
+print('3. What moods do you typically associate with music?')
 print(' A. Introspective/Reflective')
 print(' B. Sad/Melancholic')
 print(' C. Energetic/Upbeat')
@@ -102,9 +102,53 @@ else:
 
 
 #question 5
-print('5. Which instruments/sounds do you prefer to hear when listening to music?')
-print(' A. Bass/Electric guitar')
-print(' B. Sampled beats')
+print('5. Which artists or bands do you enjoy listening to the most?')
+print(' A. Mitski / Hozier / Lana Del Rey')
+print(' B. BTS / Beyonce / Lady Gaga')
+print(' C. Megan Thee Stallion / J.Cole / Drake')
+print(' D. Fall Out Boy / Paramore / Arctic Monkeys')
+print(' E. SZA / Brent Faiyaz / Frank Ocean')
+
+answer = input('Enter your answer: ')
+
+if answer == 'A':
+    indie_alt += 3
+elif answer == 'B':
+    pop += 3
+elif answer == 'C':
+    rap_hiphop += 3
+elif answer == 'D':
+    rock += 3
+elif answer == 'E':
+    rb += 3
+else:
+    print('Please enter A, B, C, D, or E')
+
+
+genre_score = max(indie_alt, pop, rap_hiphop, rock, rb)
+
+if indie_alt == genre_score:
+    print('We think you\'ll love these artists:  ') # enter indie artists
+
+if rock == genre_score:
+    print('We think you\'ll love these artists:  ') # enter rock artists
+
+if pop == genre_score:
+    print('We think you\'ll love these artists:  ') # enter pop artists
+
+if rb == genre_score:
+    print('We think you\'ll love these artists:  ') # enter r&b artists
+
+if rap_hiphop == genre_score:
+    print('We think you\'ll love these artists:  ') # enter rap/hiphop artists
+
+
+
+
+  
+
+
+
 
 
 
