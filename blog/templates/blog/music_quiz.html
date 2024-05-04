@@ -1,1 +1,16 @@
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+    </head>
+    <body>
+        <h1>Take our quiz here:</h1>
+        <form method="post">
+            {% csrf_token%}
+            <p>1. When do you typically listen to music?</p>
+            <input type="radio" id="q1_o1" name="indie_alt" value="2"> <label for="q1_o1">While working out/exercising</label><br>
+        </form>
+    </body>
+
+</html>

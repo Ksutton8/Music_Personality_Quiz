@@ -31,7 +31,7 @@ def music_quiz(request):
         elif rap_hiphop == genre_score:
             recommended_artists = ['Rap/Hip-hop artists']  
 
-        return render(request, 'music_quiz/results.html', {'genre_score': recommended_artists})
+        return render(request, 'blog/results.html', {'genre_score': recommended_artists})
 
     else:
         return render(request, 'blog/music_quiz.html')
