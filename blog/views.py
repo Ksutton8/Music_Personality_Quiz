@@ -34,4 +34,4 @@ def music_quiz(request):
         return render(request, 'music_quiz/results.html', {'genre_score': recommended_artists})
 
     else:
-        return render(request, 'music_quiz/music_quiz.html')
+        return render(request, 'blog/music_quiz.html')
